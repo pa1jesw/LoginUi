@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_style"
+    android:layout_height="match_parent"
+    tools:context="com.pa1.loginui.MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:fontFamily="monospace"
+        android:text="Login"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/banner_style"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="335dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="casual"
+                android:textSize="19dp"
+                android:layout_marginTop="60dp"
+                android:textColor="#4C0001"
+                android:drawableTint="#070000"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:inputType="textEmailAddress"
+                android:hint="  Enter Email" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_pas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_lock_lock"
+                android:drawableTint="#070000"
+                android:ems="10"
+                android:layout_marginTop="25dp"
+                android:hint=" Enter Password"
+                android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="348dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/index"
+                android:elevation="5dp"
+                android:fontFamily="casual"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:elevation="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_file"
+                android:text="Sign In" />
+
+
+            <Button
+                android:id="@+id/btnnewAcc"
+                android:layout_marginTop="5dp"
+                android:elevation="5dp"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:background="@drawable/btn_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Account" />
+
+            <TextView
+                android:id="@+id/tvForgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="6dp"
+                android:textStyle="bold"
+                android:text="@string/text"
+                android:textSize="19dp" />
+        </LinearLayout>
+    </RelativeLayout>
+<ImageView
+    android:layout_width="80dp"
+    android:layout_height="70dp"
+    android:layout_below="@id/text"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:elevation="4dp"
+    android:src="@drawable/logoo"/>
+</RelativeLayout>
