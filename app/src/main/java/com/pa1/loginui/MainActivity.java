@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    //github https://github.com/pa1jesw/LoginUi.git
+
+
+    //open settings->click Collaborators->type on search on username/email......
     //navigation drawer website for detail info   https://stablekernel.com/using-fragments-to-simply-android-nagigation-drawers/
 //login using sqlite: http://computerjunkies.com.android-login-registration-screen-with-sqlite-database-example/
     Button button;

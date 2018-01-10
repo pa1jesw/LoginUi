@@ -26,6 +26,7 @@
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="35dp"
+        android:layout_margin="7dp"
         android:background="@drawable/banner_style"
         android:padding="10dp">
 
